@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>下载</title>
+    <script>
+         config = {
+             notice:{
+                 title:"全网首发8030", //公告标题
+                 text:"苹果小跳蛙全新8030最高版本" //公告内容
+             },
+             app:{
+                 name1:"小跳蛙", //应用一
+                 api1:"http://192.168.10.187:12345/api/down/redeem/gXLwZs/code/{code}/v1", //应用一安装地址 ps: gXLwZs 等于下载后缀 v1或v2表示绑定的应用1或2
+                 name2:"小跳蛙 2",//应用二 留空则不显示
+                 api2:"http://192.168.10.187:12345/api/down/redeem/gXLwZs/code/{code}/v2", //应用一安装地址
+                 queryUrl:""
+             },
+            theme:{
+                topImg:"/assets/top.png",// 顶部图
+                bottomImg:"/assets/b.png",// 底部图
+                color:"#057640", //全局风格颜色
+                background:"#F5F9F8", //全局背景颜色
+                button:{
+                    color:"#057640", //按钮颜色
+                    textColor:"#057640" //按钮文字颜色
+                }
+            }
+        }
+        document.documentElement.style.background = config.theme.background
+    </script>
+    <script type="module" crossorigin src="/assets/index-2de1a9e7.js"></script>
+    <link rel="stylesheet" href="/assets/index-6158c7cc.css">
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+</html>
